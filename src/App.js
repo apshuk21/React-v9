@@ -1,5 +1,6 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
+import Pizza from "./Pizza";
 
 function App() {
   return React.createElement(
@@ -19,13 +20,6 @@ function App() {
       description: "Tomato, mozzarella, ham, and pineapple",
     }),
   );
-}
-
-function Pizza(props) {
-  return React.createElement("div", {}, [
-    React.createElement("h1", {}, props.name),
-    React.createElement("p", {}, props.description),
-  ]);
 }
 
 const rootContainer = document.getElementById("root");
